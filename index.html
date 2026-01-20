@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerebro LEDL v36.0 - ACCESO DIRECTO</title>
+    <style>
+        :root { --neon: #00f2ff; --gold: #ffd700; --bg: #000; }
+        body { background: var(--bg); color: var(--neon); font-family: monospace; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+        .vault { border: 2px solid var(--neon); padding: 40px; box-shadow: 0 0 30px var(--neon); background: rgba(0,10,20,0.95); width: 320px; border-radius: 15px; }
+        input { background: #000; border: 1px solid var(--neon); color: var(--neon); padding: 15px; margin: 15px 0; width: 85%; text-align: center; font-size: 1.2em; outline: none; }
+        button { background: var(--neon); color: #000; border: none; padding: 15px; width: 95%; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+        .loading { display: none; color: var(--gold); margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="vault" id="v">
+        <h2>CORE LEDL v36</h2>
+        <p style="color:var(--gold); font-size:11px;">J ANDRES RESENDEZ R | MASTER</p>
+        <input type="password" id="pass" placeholder="3l1z@T34m0M@$">
+        <button onclick="unlock()">INGRESAR AL NÚCLEO</button>
+        <div id="loader" class="loading">Sincronizando con la nube...</div>
+    </div>
+
+    <script>
+        function unlock() {
+            if(document.getElementById('pass').value === "3l1z@T34m0M@$") {
+                document.getElementById('loader').style.display = 'block';
+                // Notificación al Centinela
+                fetch('https://api.telegram.org/bot8373914595:AAEVwbOGWjIKB1Nqd5PJs1PUweCz3-ilVsE/sendMessage?chat_id=8486738889&text=🔓 *ACCESO DIRECTO:* Andres ha entrado al Núcleo v36.');
+                
+                // REDIRECCIÓN DIRECTA AL SISTEMA (Aquí pones tu URL de Netlify una vez que funcione)
+                setTimeout(() => {
+                    alert("ACCESO CONCEDIDO. Bienvenido, Webmaster.");
+                    // Cambia la siguiente línea por el link que te dé Netlify
+                    window.location.href = "https://tu-sitio-netlify.netlify.app/dashboard"; 
+                }, 1500);
+            } else { alert("ERROR DE SOBERANÍA"); }
+        }
+    </script>
+</body>
+</html>
