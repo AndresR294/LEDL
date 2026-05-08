@@ -1,8 +1,0 @@
-.git/
-.config/
-.ash_history
-*.Zip
-*.tar.gz
-amalgama_v4_final.sh
-reset_soberano.sh
-purga_ledl.sh

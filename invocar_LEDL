@@ -1,2 +1,0 @@
-#!/bin/bash
-tar -xOzf Update_Soberano.tar.gz Manifiesto_Soberano_LEDL.txt
