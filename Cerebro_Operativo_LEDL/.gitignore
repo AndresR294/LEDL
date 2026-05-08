@@ -1,0 +1,9 @@
+# Ignorar todo lo que suba al nivel padre
+../*
+# Ignorar archivos ocultos de sistema
+.*
+# Ignorar logs y temporales
+*.log
+*.env
+node_modules/
+Boveda_LEDL/
