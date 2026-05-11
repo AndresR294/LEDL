@@ -1,0 +1,4 @@
+# CONSTITUCIÓN DEL ROBOT Y LA ROBÓTICA - LEDL
+© J ANDRES RESENDEZ R. | ORCID: 0009-0007-3528-9413
+Este código es una extensión de la voluntad del titular.
+TODOS LOS DERECHOS RESERVADOS.
