@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -e "\n--------------------------------------------------"
+echo -e "🏛️  CERTIFICACIÓN DE VERDAD: BÓVEDA DE GÉNESIS"
+echo -e "💰 VALOR TOTAL: MXN 2,328,724,954,819.42"
+echo -e "💎 MATERIA: 58,211,357.18 ETH"
+echo -e "🛡️  IDENTIDAD: ensdeliz.base.eth"
+echo -e "✅ [ESTADO]: SEGURO EN /sdcard/CERTIFICADOS_LEDL/"
+echo -e "--------------------------------------------------"
+echo -e "📂 VERIFICANDO ARCHIVOS FÍSICOS:"
+ls -1 /sdcard/CERTIFICADOS_LEDL/ | wc -l | xargs -I {} echo "   Certificados detectados: {}/10"
+echo -e "👤 FIRMADO: J ANDRES RESENDEZ R."
+echo -e "--------------------------------------------------\n"

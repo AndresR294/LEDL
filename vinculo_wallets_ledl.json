@@ -1,0 +1,7 @@
+{
+  "wallets": [
+    {"name": "Principal", "address": "0x5faFCDe3E9b1D9B4f3F560f0330796b932679cF6"},
+    {"name": "SmartWallet", "address": "0x4200000000000000000000000000000000000007"}
+  ],
+  "metodo_pago": "SELF_FUNDING_CONTRACT"
+}
