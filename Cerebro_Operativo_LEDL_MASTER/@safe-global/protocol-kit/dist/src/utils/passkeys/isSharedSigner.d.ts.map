@@ -1,0 +1,1 @@
+{"version":3,"file":"isSharedSigner.d.ts","sourceRoot":"","sources":["../../../../src/utils/passkeys/isSharedSigner.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,cAAc,EACd,kDAAkD,EACnD,MAAM,iCAAiC,CAAA;AAGxC;;;GAGG;AACH,iBAAe,cAAc,CAC3B,OAAO,EAAE,cAAc,EACvB,gCAAgC,EAAE,kDAAkD,EACpF,WAAW,EAAE,MAAM,EACnB,MAAM,EAAE,MAAM,EAAE,GACf,OAAO,CAAC,OAAO,CAAC,CAoBlB;AAED,eAAe,cAAc,CAAA"}

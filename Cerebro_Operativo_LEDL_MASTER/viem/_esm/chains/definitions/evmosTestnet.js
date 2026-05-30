@@ -1,0 +1,21 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const evmosTestnet = /*#__PURE__*/ defineChain({
+    id: 9_000,
+    name: 'Evmos Testnet',
+    nativeCurrency: {
+        decimals: 18,
+        name: 'Evmos',
+        symbol: 'EVMOS',
+    },
+    rpcUrls: {
+        default: { http: ['https://eth.bd.evmos.dev:8545'] },
+    },
+    blockExplorers: {
+        default: {
+            name: 'Evmos Testnet Block Explorer',
+            url: 'https://evm.evmos.dev/',
+        },
+    },
+    testnet: true,
+});
+//# sourceMappingURL=evmosTestnet.js.map

@@ -1,0 +1,24 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const auroria = /*#__PURE__*/ defineChain({
+    id: 205205,
+    name: 'Auroria Testnet',
+    network: 'auroria',
+    nativeCurrency: {
+        name: 'Auroria Stratis',
+        symbol: 'tSTRAX',
+        decimals: 18,
+    },
+    rpcUrls: {
+        default: {
+            http: ['https://auroria.rpc.stratisevm.com'],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: 'Auroria Testnet Explorer',
+            url: 'https://auroria.explorer.stratisevm.com',
+        },
+    },
+    testnet: true,
+});
+//# sourceMappingURL=auroria.js.map

@@ -1,0 +1,17 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const wemix = /*#__PURE__*/ defineChain({
+    id: 1111,
+    name: 'WEMIX',
+    network: 'wemix-mainnet',
+    nativeCurrency: { name: 'WEMIX', symbol: 'WEMIX', decimals: 18 },
+    rpcUrls: {
+        default: { http: ['https://api.wemix.com'] },
+    },
+    blockExplorers: {
+        default: {
+            name: 'wemixExplorer',
+            url: 'https://explorer.wemix.com',
+        },
+    },
+});
+//# sourceMappingURL=wemix.js.map

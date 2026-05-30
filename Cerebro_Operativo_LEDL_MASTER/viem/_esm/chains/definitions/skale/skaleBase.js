@@ -1,0 +1,20 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/../utils/chain/defineChain.js';
+export const skaleBase = /*#__PURE__*/ defineChain({
+    id: 1187947933,
+    name: 'SKALE Base',
+    nativeCurrency: { name: 'Credits', symbol: 'CREDIT', decimals: 18 },
+    rpcUrls: {
+        default: {
+            http: ['https://skale-base.skalenodes.com/v1/base'],
+            webSocket: ['wss://skale-base.skalenodes.com/v1/ws/base'],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: 'SKALE Explorer',
+            url: 'https://skale-base-explorer.skalenodes.com/',
+        },
+    },
+    testnet: true,
+});
+//# sourceMappingURL=skaleBase.js.map

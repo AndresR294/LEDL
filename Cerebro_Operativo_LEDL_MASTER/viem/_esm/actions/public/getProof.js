@@ -1,0 +1,41 @@
+import { formatBlockParameter, } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/block/formatBlockParameter.js';
+import { formatProof, } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/formatters/proof.js';
+/**
+ * Returns the account and storage values of the specified account including the Merkle-proof.
+ *
+ * - Docs: https://viem.sh/docs/actions/public/getProof
+ * - JSON-RPC Methods:
+ *   - Calls [`eth_getProof`](https://eips.ethereum.org/EIPS/eip-1186)
+ *
+ * @param client - Client to use
+ * @param parameters - {@link GetProofParameters}
+ * @returns Proof data. {@link GetProofReturnType}
+ *
+ * @example
+ * import { createPublicClient, http } from 'viem'
+ * import { mainnet } from 'viem/chains'
+ * import { getProof } from 'viem/public'
+ *
+ * const client = createPublicClient({
+ *   chain: mainnet,
+ *   transport: http(),
+ * })
+ * const block = await getProof(client, {
+ *  address: '0x...',
+ *  storageKeys: ['0x...'],
+ * })
+ */
+export async function getProof(client, { address, blockHash, blockNumber, blockTag = 'latest', requireCanonical, storageKeys, }) {
+    const block = formatBlockParameter({
+        blockHash,
+        blockNumber,
+        blockTag,
+        requireCanonical,
+    });
+    const proof = await client.request({
+        method: 'eth_getProof',
+        params: [address, storageKeys, block],
+    });
+    return formatProof(proof);
+}
+//# sourceMappingURL=getProof.js.map

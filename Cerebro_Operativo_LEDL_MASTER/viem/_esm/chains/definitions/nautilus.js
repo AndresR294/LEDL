@@ -1,0 +1,18 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const nautilus = /*#__PURE__*/ defineChain({
+    id: 22222,
+    name: 'Nautilus Mainnet',
+    nativeCurrency: { name: 'ZBC', symbol: 'ZBC', decimals: 9 },
+    rpcUrls: {
+        default: {
+            http: ['https://api.nautilus.nautchain.xyz'],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: 'NautScan',
+            url: 'https://nautscan.com',
+        },
+    },
+});
+//# sourceMappingURL=nautilus.js.map

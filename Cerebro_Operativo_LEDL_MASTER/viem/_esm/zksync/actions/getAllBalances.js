@@ -1,0 +1,16 @@
+import { parseAccount } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/accounts/utils/parseAccount.js';
+import { hexToBigInt } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/encoding/fromHex.js';
+/* @deprecated This method has been removed from the node API. */
+export async function getAllBalances(client, parameters) {
+    const { account: account_ } = parameters;
+    const account = account_ ? parseAccount(account_) : client.account;
+    const balances = await client.request({
+        method: 'zks_getAllAccountBalances',
+        params: [account.address],
+    });
+    const convertedBalances = {};
+    for (const token in balances)
+        convertedBalances[token] = hexToBigInt(balances[token]);
+    return convertedBalances;
+}
+//# sourceMappingURL=getAllBalances.js.map

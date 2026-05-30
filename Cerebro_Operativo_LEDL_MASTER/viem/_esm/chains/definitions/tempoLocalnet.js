@@ -1,0 +1,17 @@
+import { chainConfig } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/tempo/chainConfig.js';
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const tempoLocalnet = /*#__PURE__*/ defineChain({
+    ...chainConfig,
+    id: 1337,
+    name: 'Tempo',
+    hardfork: 't3',
+    nativeCurrency: {
+        name: 'USD',
+        symbol: 'USD',
+        decimals: 6,
+    },
+    rpcUrls: {
+        default: { http: ['http://localhost:8545'] },
+    },
+});
+//# sourceMappingURL=tempoLocalnet.js.map

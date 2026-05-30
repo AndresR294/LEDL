@@ -1,0 +1,19 @@
+import { defineChain } from '/data/data/com.termux/files/home/Cerebro_Operativo_LEDL/07_TRANS_DATA/node_modules/viem/_cjs/utils/chain/defineChain.js';
+export const adf = /*#__PURE__*/ defineChain({
+    id: 1215,
+    name: 'ADF Chain',
+    nativeCurrency: { name: 'ADDFILL', symbol: 'ADF', decimals: 18 },
+    rpcUrls: {
+        default: {
+            http: ['https://mainnet.adftechnology.com'],
+        },
+    },
+    blockExplorers: {
+        default: {
+            name: 'ADF Mainnet Explorer',
+            url: 'https://explorer.adftechnology.com',
+        },
+    },
+    testnet: false,
+});
+//# sourceMappingURL=adf.js.map
